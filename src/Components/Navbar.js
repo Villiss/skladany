@@ -27,7 +27,7 @@ const NavLink = css`
     text-decoration: none;
     transition: 0.3s ease-in-out;
     &:hover{
-        color: #ff6600;
+        color: brown;
     }
 `
 
@@ -39,7 +39,7 @@ const Logo = styled(Link)`
 const MenuBars = styled(FaBars)`
     display: none;
     &:hover {
-        color: #ff6600;
+        color: brown;
     }
     @media screen and (max-width: 768px){
         display: block;
@@ -58,7 +58,7 @@ const MenuBars = styled(FaBars)`
 const NavMenu = styled.div`
     display: flex;
     align-items: center;
-    margin-right: -48px;
+    margin-right: 50px;
     @media screen and (max-width: 768px){
         display: none;
     }
