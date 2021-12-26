@@ -36,9 +36,9 @@ function Kontakt() {
       }
 
       const Section = styled.section`
-        color: #fff;
-        padding: 160px 0;
-        background-color: brown;
+        color: #000;
+        padding: 100px;
+        background-color: #d5b37d;
     `
 
     const KontaktRow = styled.div`
@@ -49,6 +49,12 @@ function Kontakt() {
         margin-left: 15px;
         flex-wrap: wrap;
         align-content: stretch;
+
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+            width: '50%';
+            margin: 'auto';
+            }    
     `
 
     const KontaktCol = styled.div`
@@ -67,7 +73,7 @@ function Kontakt() {
     `
 
     const TopLine = styled.h1`
-        color: #dcdcdc;
+        color: #000;
         font-size: 16px;
         line-height: 16px;
         font-weight: 700;
@@ -81,7 +87,7 @@ function Kontakt() {
         font-size: 48px;
         line-height: 1.1;
         font-weight: 600;
-        color: #fff;
+        color: #000;
     `
 
     const Adresa = styled.address`
@@ -90,24 +96,23 @@ function Kontakt() {
         font-size: 18px;
         line-height: 24px;
         a {
-            color: #fff;
+            color: #000;
             text-decoration: none;
             transition: all ease-out 0.3s;
             &:hover{
                 font-size: 19px;
-                color: #ff6600;
+                color: brown;
             }
         }
     `
     const Inputs = styled.div`
-        max-width: 555px;
+        width: '50%';
     `
 
     const Formular = styled.form`
-        max-width: 95%;
+        max-width: 100%;
         margin-top: 0;
         margin-right: 0;
-        margin-left: 10px;
         padding-right: 0;
         display: inline-block;
     `
@@ -125,7 +130,7 @@ function Kontakt() {
         transition: all 0.5s ease-in-out;
         &:focus {
             outline: none;
-            border-bottom: 3px solid #ff6600;
+            border-bottom: 3px solid #000;
         }
     `
 
@@ -142,18 +147,19 @@ function Kontakt() {
         transition: all 0.5s ease-in-out;
         &:focus {
             outline: none;
-            border-bottom: 3px solid #ff6600;
+            border-bottom: 3px solid #000;
         }
     `
 
     const Odoslat = styled.input`
+        width: '100%';
         padding: 12px 64px;
         font-size: 20px;
         background-color: #fff;
         border: none;
         &:hover{
             color: #fff;
-            background-color: #ff6600;
+            background-color: brown;
             transition: all 0.2s ease-out;
         }
     `
@@ -161,7 +167,7 @@ function Kontakt() {
     return (
         <div>
             <Section name='/kontakt'>
-                <div style={{paddingRight: '30px', paddingLeft: '30px'}}>
+                <div style={{marginRight: 50}}>
                     <KontaktRow>
                         <KontaktCol>
                             <KontaktTextWrap >

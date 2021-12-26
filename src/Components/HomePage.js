@@ -80,7 +80,7 @@ const HeroContent = styled.div`
         font-weight: 400;
         text-transform: uppercase;
         text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
-        text-align: left;
+        text-align: center;
         margin-bottom: 0.8rem;
     }
     p{
@@ -115,7 +115,7 @@ const arrowButtons = css`
     user-select: none;
     transition: 0.3s ease-in-out;
     &:hover {
-        background: #ff6600;
+        background: brown;
         transform: scale(1.05);
     }
 `
@@ -186,8 +186,8 @@ const HomePage = ({slides}) => {
                                 <HeroSlider>
                                 <HeroImage blurry={blureffect} src={slide.image} alt={slide.alt}/>
                                 <HeroContent style={{display: `${display}`}}>
-                                    <h1>{slide.title}</h1>
-                                    <p>{slide.desc}</p>
+                                    <h1>{(slide.title).toUpperCase()}</h1>
+                                    {/* <p>{slide.desc}</p> */}
                                 </HeroContent>                            
                             </HeroSlider>
                             )}
