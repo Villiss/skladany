@@ -36,7 +36,7 @@ function Kontakt() {
       }
 
       const Section = styled.section`
-        color: #000;
+        color: #242424;
         padding: 100px;
         background-color: #d5b37d;
     `
@@ -44,16 +44,10 @@ function Kontakt() {
     const KontaktRow = styled.div`
         align-items: center;
         display: flex;
-        margin-right: 15px;
-        margin-bottom: 15px;
-        margin-left: 15px;
-        flex-wrap: wrap;
         align-content: stretch;
 
         @media screen and (max-width: 768px){
             flex-direction: column;
-            width: '50%';
-            margin: 'auto';
             }    
     `
 
@@ -62,18 +56,21 @@ function Kontakt() {
         padding-right: 15px;
         padding-left: 15px;
         flex: 1;
-        max-width: 50%;
         flex-basis: 50%;
+        
     `
 
     const KontaktTextWrap = styled.div`
         max-width: 540px;
         padding-top: 0;
         padding-bottom: 60px;
+        @media screen and (max-width: 768px){
+            text-align: center;
+        }
     `
 
     const TopLine = styled.h1`
-        color: #000;
+        color: #242424;
         font-size: 16px;
         line-height: 16px;
         font-weight: 700;
@@ -87,7 +84,7 @@ function Kontakt() {
         font-size: 48px;
         line-height: 1.1;
         font-weight: 600;
-        color: #000;
+        color: #242424;
     `
 
     const Adresa = styled.address`
@@ -96,7 +93,7 @@ function Kontakt() {
         font-size: 18px;
         line-height: 24px;
         a {
-            color: #000;
+            color: #242424;
             text-decoration: none;
             transition: all ease-out 0.3s;
             &:hover{
@@ -105,9 +102,6 @@ function Kontakt() {
             }
         }
     `
-    const Inputs = styled.div`
-        width: '50%';
-    `
 
     const Formular = styled.form`
         max-width: 100%;
@@ -115,6 +109,9 @@ function Kontakt() {
         margin-right: 0;
         padding-right: 0;
         display: inline-block;
+        @media screen and (max-width: 768px){
+            text-align: center;
+        }
     `
 
     const Polia = styled.input`
@@ -130,7 +127,7 @@ function Kontakt() {
         transition: all 0.5s ease-in-out;
         &:focus {
             outline: none;
-            border-bottom: 3px solid #000;
+            border-bottom: 3px solid #242424;
         }
     `
 
@@ -138,7 +135,7 @@ function Kontakt() {
         width: 100%;
         color: #dcdcdc;
         padding: 12px 20px;
-        margin: 8px 0;
+        margin: 18px 0;
         display: inline-block;
         border: none;
         background-color: transparent;
@@ -147,7 +144,7 @@ function Kontakt() {
         transition: all 0.5s ease-in-out;
         &:focus {
             outline: none;
-            border-bottom: 3px solid #000;
+            border-bottom: 3px solid #242424;
         }
     `
 
@@ -167,7 +164,7 @@ function Kontakt() {
     return (
         <div>
             <Section name='/kontakt'>
-                <div style={{marginRight: 50}}>
+                <div>
                     <KontaktRow>
                         <KontaktCol>
                             <KontaktTextWrap >
@@ -179,31 +176,28 @@ function Kontakt() {
                                     <h2>Sídlo:</h2>
                                     Nazov s.r.o.<br/>
                                     Ulica<br/>
-                                    PSC Mesto<br/> <br/>
+                                    PSC Mesto<br/> 
+                                    {/* <br/> 
                                     <h2>Predajné miesto:</h2>
                                     Ulica<br/>
-                                    PSC Mesto<br/>
+                                    PSC Mesto<br/> */}
                                     <a href='mailto:'>email</a><br/>
                                     <a href='tel:'>Telefonne cislo</a><br/>
                                     </Adresa>
                             </KontaktTextWrap>
                         </KontaktCol>
                         <KontaktCol>
-                            <Inputs>
-                                <Inputs>
-                                    <Formular onSubmit={sendEmail}>
-                                        <label>Predmet</label>
-                                        <Polia type="text" name="predmet" required />
-                                        <label>Meno a Priezvisko</label>
-                                        <Polia type="text" name="meno" required />
-                                        <label>Email</label>
-                                        <Polia type="email" name="email" required />
-                                        <label>Správa</label>
-                                        <Textarea name="sprava" required/>
-                                        <Odoslat type="submit" value="Odoslať"/>
-                                    </Formular>
-                                </Inputs>
-                            </Inputs>
+                            <Formular onSubmit={sendEmail}>
+                                <label style={{ fontWeight: 'bold' }}>Predmet</label>
+                                <Polia type="text" name="predmet" required />
+                                <label style={{ fontWeight: 'bold' }}>Meno a Priezvisko</label>
+                                <Polia type="text" name="meno" required />
+                                <label style={{ fontWeight: 'bold' }}>Email</label>
+                                <Polia type="email" name="email" required />
+                                <label style={{ fontWeight: 'bold' }}>Správa</label>
+                                <Textarea name="sprava" required/>
+                                <Odoslat type="submit" value="Odoslať"/>
+                            </Formular>
                         </KontaktCol>
                     </KontaktRow>
                 </div>
