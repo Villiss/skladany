@@ -187,7 +187,7 @@ const HomePage = ({slides}) => {
                                 <HeroImage blurry={blureffect} src={slide.image} alt={slide.alt}/>
                                 <HeroContent style={{display: `${display}`}}>
                                     <h1>{(slide.title).toUpperCase()}</h1>
-                                    {/* <p>{slide.desc}</p> */}
+                                    <p>{slide.desc}</p>
                                 </HeroContent>                            
                             </HeroSlider>
                             )}

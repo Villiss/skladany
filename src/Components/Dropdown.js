@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import styled from 'styled-components'
+import logo from '../images/skladany.png'
 import { menuData } from '../data/Data'
 import { FaTimes } from 'react-icons/fa'
 
@@ -34,6 +35,10 @@ const CloseIcon = styled(FaTimes)`
 `
 
 const DropdownWrapper = styled.div`
+`
+
+const Obrazok = styled.img`
+    height: 50px;
 `
 
 const DropdownMenu = styled.div`
@@ -77,7 +82,9 @@ const Dropdown = ({isOpen, toggle}) => {
             </Icon>
             <DropdownWrapper>
                 <DropdownMenu>
-                <Logo smooth onClick={toggle} to='/'>skladany.sk</Logo>
+                <Logo smooth onClick={toggle} to='/'>
+                    <Obrazok src={logo} alt='logo' />
+                </Logo>
                     {/* {menuData.map((item, index) => (
                         <DropdownLink smooth to={item.link} key={index} onClick={toggle}>
                             {item.title}
