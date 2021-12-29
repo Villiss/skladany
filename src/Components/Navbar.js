@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, {css} from 'styled-components'
 import { Link } from 'react-scroll'
+import logo from '../images/skladany.png'
 import { menuData } from '../data/Data'
 import { FaBars } from 'react-icons/fa'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -34,6 +35,10 @@ const NavLink = css`
 const Logo = styled(Link)`
     ${NavLink}
     font-style: italic;
+`
+
+const Obrazok = styled.img`
+    height: 50px;
 `
 
 const MenuBars = styled(FaBars)`
@@ -70,14 +75,11 @@ const NavMenuLinks = styled(Link)`
 const Navbar = ({toggle}) => {
     return (
         <Nav>
-            <Logo smooth to='/'>skladany.sk</Logo>
+            <Logo smooth to='/'>
+                <Obrazok src={logo} alt='logo' />
+            </Logo>
             <MenuBars onClick={toggle} />
             <NavMenu>
-                {/* {menuData.map((item, index)=> (
-                    <NavMenuLinks smooth to={item.link} key={index}>
-                        {item.title}
-                    </NavMenuLinks>
-                ))} */}
                 <NavMenuLinks smooth to='/kontakt'>
                         Kontakt
                     </NavMenuLinks>

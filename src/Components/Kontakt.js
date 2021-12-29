@@ -173,16 +173,11 @@ function Kontakt() {
                                 </TopLine>
                                 <Heading >Kontakt</Heading>
                                     <Adresa>
-                                    <h2>Sídlo:</h2>
-                                    Nazov s.r.o.<br/>
-                                    Ulica<br/>
-                                    PSC Mesto<br/> 
-                                    {/* <br/> 
-                                    <h2>Predajné miesto:</h2>
-                                    Ulica<br/>
-                                    PSC Mesto<br/> */}
-                                    <a href='mailto:'>email</a><br/>
-                                    <a href='tel:'>Telefonne cislo</a><br/>
+                                    Milan Skladaný<br/>
+                                    Potočná 385/20<br/>
+                                    976 68 Heľpa<br/> 
+                                    <a href='mailto:skladany@skladany.sk'>skladany@skladany.sk</a><br/>
+                                    <a href='tel:0903276360'>0903276360</a><br/>
                                     </Adresa>
                             </KontaktTextWrap>
                         </KontaktCol>
