@@ -2,6 +2,10 @@ import ImageOne from '../images/house.jpg'
 import ImageTwo from '../images/house2.jpg'
 import ImageThree from '../images/house3.jpg'
 
+export const menuData = [
+    { title: 'Kontakt', link: '/kontakt' }
+]
+
 export const SliderData = [
     {
         title: 'Skladany.sk',

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import styled from 'styled-components'
-import { menuData } from '../data/MenuData'
+import { menuData } from '../data/Data'
 import { FaTimes } from 'react-icons/fa'
 
 const DropdownContainer = styled.div`
@@ -30,7 +30,7 @@ const Icon = styled.div`
 `
 
 const CloseIcon = styled(FaTimes)`
-    color: #000d1a;
+    color: #242424;
 `
 
 const DropdownWrapper = styled.div`
@@ -58,7 +58,7 @@ const DropdownLink = styled(Link)`
     cursor: pointer;
     transition: 0.2s ease-in-out;
     &:hover {
-        color: #000d1a;
+        color: #242424;
     }
 `
 

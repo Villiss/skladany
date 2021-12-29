@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, {css} from 'styled-components'
 import { Link } from 'react-scroll'
-import { menuData } from '../data/MenuData'
+import { menuData } from '../data/Data'
 import { FaBars } from 'react-icons/fa'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 

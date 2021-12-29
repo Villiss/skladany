@@ -3,12 +3,14 @@ import Kontakt from './Components/Kontakt';
 import Footer from './Components/Footer';
 import HomePage from './Components/HomePage';
 import Navbar from './Components/Navbar';
-import { SliderData } from './data/SliderData';
+import { SliderData } from './data/Data';
 import { useState } from 'react';
 import Dropdown from './Components/Dropdown';
 import GlobalStyle from "./globalStyle";
 
 function App() {
+
+  document.title = 'Skladany'
 
   const [isOpen, setIsOpen] = useState(false)
 
