@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import styled from 'styled-components'
-import logo from '../images/skladany.png'
 import { menuData } from '../data/Data'
 import { FaTimes } from 'react-icons/fa'
 
@@ -83,7 +82,7 @@ const Dropdown = ({isOpen, toggle}) => {
             <DropdownWrapper>
                 <DropdownMenu>
                 <Logo smooth onClick={toggle} to='/'>
-                    <Obrazok src={logo} alt='logo' />
+                    <Obrazok src={'images/skladany.png'} alt='logo' />
                 </Logo>
                     {/* {menuData.map((item, index) => (
                         <DropdownLink smooth to={item.link} key={index} onClick={toggle}>

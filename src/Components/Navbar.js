@@ -1,7 +1,6 @@
 import React from 'react'
 import styled, {css} from 'styled-components'
 import { Link } from 'react-scroll'
-import logo from '../images/skladany.png'
 import { menuData } from '../data/Data'
 import { FaBars } from 'react-icons/fa'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -76,7 +75,7 @@ const Navbar = ({toggle}) => {
     return (
         <Nav>
             <Logo smooth to='/'>
-                <Obrazok src={logo} alt='logo' />
+                <Obrazok src={'images/skladany.png'} alt='logo' />
             </Logo>
             <MenuBars onClick={toggle} />
             <NavMenu>
