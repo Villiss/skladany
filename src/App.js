@@ -10,7 +10,6 @@ import GlobalStyle from "./globalStyle";
 
 function App() {
 
-  document.title = 'Skladany'
 
   const [isOpen, setIsOpen] = useState(false)
 
